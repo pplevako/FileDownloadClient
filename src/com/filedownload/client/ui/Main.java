@@ -56,10 +56,11 @@ public class Main {
         return frame;
     }
 
-    public void setVisible(boolean visible) {
+    public void setVisible() {
         frame.setContentPane(jpanel1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
+        frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
 

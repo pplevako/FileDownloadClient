@@ -12,7 +12,7 @@ import java.net.URL;
 public class App {
 
     public static void main(String[] args) throws MalformedURLException {
-        JFrame frame = new JFrame("Main");
+        JFrame frame = new JFrame("File download app");
         Main view = new Main(frame);
         Config config = Config.getDefault();
 
@@ -22,7 +22,7 @@ public class App {
         FileDownloadController c1 = new FileDownloadController(view, fileDownloadModel, config);
         FilesListController c = new FilesListController(view, model);
 
-        view.setVisible(true);
+        view.setVisible();
 
         //c.showView;
     }
